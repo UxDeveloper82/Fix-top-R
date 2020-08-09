@@ -1,0 +1,20 @@
+﻿<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+        <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Fix-Top</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" asp-action="About" asp-controller="Home">About</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" asp-action="Portfolio" asp-controller="Home">Portfolio</a>
+                </li>
+
+            </ul>
+            <partial name="_LoginPartial" />
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,320 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!--banner-->
+
+<section class="site-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 site-title">
+                <h1>Web-Design</h1>
+                <h2>Welcome</h2>
+                <h2 id="time"></h2>
+                <a href="#top" class="btn btn-danger btn-lg text-center">Contact-Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--banner-ends-->
+
+<!--services-container-->
+ <section class="our-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Our Services</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa fa-html5 fa-4x"></i>
+                    <h2>HTML</h2>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa fa-css3 fa-4x"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa fa-users fa-4x"></i>
+                    <h2>Social-Media</h2>
+                </div>
+            </div>
+        </div>
+</section>
+    <!--services-container-ends-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Contact-Me</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" id="contact-area">
+                <div class="col-md-4 col-xs-4">
+                    <img src="~/images/home-icon.png" />
+                    <h4>Serving Orlando</h4>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <img src="~/images/home-icon2.png" />
+                    <h4>863-969-8248</h4>
+                </div>
+                <div class="col-md-4 col-xs-4">
+                    <img src="~/images/home-icon3.png" />
+                    <h4>electronicsmf@aol.com</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="location">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Location</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224444.70495248452!2d-81.50883827574293!3d28.48109711612237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C+FL!5e0!3m2!1sen!2sus!4v1490497825484" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    function writeIt() {
+        var hour = new Date().getHours();
+        var timeOfDay;
+        if (hour > 7 && hour < 12) {
+            document.write("Good Morning");
+        } else if (hour >= 12 && hour < 18) {
+            document.write("Good Afternoon");
+        } else {
+            document.write("Good Night");
+        }
+
+    }
+    document.getElementById("time").onload = writeIt();
+
+</script>
+
+@section Scripts{
+    <script>
+        var ports = [
+            {
+                "id": "1",
+                "name": "Friends-Website",
+                "type": "angular",
+                "detail": "Asp.net core Application",
+                "language": "C#",
+                "link": "http://uxdeve82-001-site2.itempurl.com/",
+                "image": "Friendsite"
+            },
+            {
+                "id": "2",
+                "name": "Parts-Inventory",
+                "type": "core",
+                "detail": "Asp.net Framework Application",
+                "language": "C#",
+                "link": "http://uxdeve82-001-site5.itempurl.com/",
+                "image": "Inventory"
+            },
+            {
+                "id": "3",
+                "name": "Appliance Web",
+                "type": "core",
+                "detail": "Asp.net Framework Application",
+                "language": "C#",
+                "link": "http://orlandoappliancerepair.tech/",
+                "image": "orrepair"
+            },
+            {
+                "id": "4",
+                "name": "BudgetApp",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Javascript",
+                "link": "https://uxdeveloper82.github.io/budgetjs/index.html",
+                "image": "budget"
+            },
+            {
+                "id": "5",
+                "name": "Ecommerce-Desing",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Javascript",
+                "link": "https://uxdeveloper82.github.io/myEcommerce/",
+                "image": "ecommerce"
+            },
+            {
+                "id": "6",
+                "name": "GithubFinder-Desing",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Javascript",
+                "link": "https://uxdeveloper82.github.io/gitFinder-index.html/",
+                "image": "githubfinder"
+            },
+            {
+                "id": "7",
+                "name": "Fix-top",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/fix-top/",
+                "image": "websites"
+            },
+            {
+                "id": "8",
+                "name": "Photography-light",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/photography-index.html/",
+                "image": "photography"
+            },
+            {
+                "id": "9",
+                "name": "Numerouno Air",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/numerouno-index.html/",
+                "image": "gitfit"
+            },
+            {
+                "id": "10",
+                "name": "Split-fown",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/split-index.html/",
+                "image": "slider"
+            },
+            {
+                "id": "11",
+                "name": "Grid-sign",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/Grid-index.html/",
+                "image": "grid"
+            },
+            {
+                "id": "12",
+                "name": "Novi-Heaven",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/novi-index.html/",
+                "image": "ui"
+            },
+            {
+                "id": "13",
+                "name": "Mobil-Male",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/Acme-w3-index.html/",
+                "image": "mobil"
+            },
+            {
+                "id": "14",
+                "name": "Dom-Manipulating",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/DomManipulating/",
+                "image": "jsmanipulating"
+            },
+            {
+                "id": "15",
+                "name": "Dom-Manipulating1",
+                "type": "templates",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/Netflix-clone-index.html",
+                "image": "netflixjs"
+            },
+            {
+                "id": "16",
+                "name": "Animatejs",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Html-css",
+                "link": "https://uxdeveloper82.github.io/image_hide/",
+                "image": "image_hide"
+            },
+            {
+                "id": "17",
+                "name": "Data-table-js",
+                "type": "data",
+                "detail": "Javascript App",
+                "language": "Html-css-js",
+                "link": "https://uxdeveloper82.github.io/interactive_table/",
+                "image": "interactive_table"
+            },
+            {
+                "id": "18",
+                "name": "Fetch-data-js",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Html-css-js",
+                "link": "https://uxdeveloper82.github.io/FetchApi/",
+                "image": "fetch"
+            },
+            {
+                "id": "19",
+                "name": "Crud-js",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Html-css-js",
+                "link": "https://uxdeveloper82.github.io/CrudJs/index.html",
+                "image": "jscrud"
+            },
+            {
+                "id": "20",
+                "name": "Axios-js",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Html-css-js",
+                "link": "https://uxdeveloper82.github.io/Axios/",
+                "image": "axios"
+            },
+            {
+                "id": "20",
+                "name": "Slide-js",
+                "type": "javascript",
+                "detail": "Javascript App",
+                "language": "Html-css-js",
+                "link": "https://uxdeveloper82.github.io/sliderjs/",
+                "image": "slidejs"
+            }
+        ];
+        const card = document.getElementById("card");
+        for (var i = 0; i < ports.length; i++) {
+            var port = ports[i];
+            card.innerHTML += `
+                       <div class="col-lg-4 col-md-4 col-sm-12 mt-2 element-item ${port.type}">
+                              <div class="card shadow">
+                                      <div class="card-img-top">
+                                          <a class="test-popup-link" href="images/port/${port.image}.png">
+                                              <img src="images/port/${port.image}.png" class="img-fluid" />
+                                          </a>
+                                      </div>
+                                      <div class="card-body">
+                                          <h4 class="card-heading">${port.name}</h4>
+                                          <span class="card-text">Details: ${port.detail}</span><br />
+                                          <span class="text-secondary">Language: ${port.language}</span><br />
+                                          <a class="btn btn-primary" href="${port.link}">Goto Page</a>
+                                      </div>
+                              </div>
+                        </div>
+               `
+        }
+    </script>
+
+}
